@@ -1,0 +1,16 @@
+body{
+  min-height: 75rem;
+  padding-top: 5.5rem;
+}
+.header-bg{
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.header-bg a{
+  color: white;
+  transition: 0.5s;
+}
+.navbar a:hover{
+  color: #b9b9b9;
+}
