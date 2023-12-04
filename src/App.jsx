@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <button className='btn btn-success'>Button</button>
     </>
   )
 }
