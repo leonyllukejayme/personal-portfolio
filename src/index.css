@@ -35,3 +35,13 @@ body{
 .btn{
   border-radius: 2rem;
 }
+
+.card{
+  border: none;
+}
+
+
+.read-more{
+  cursor: pointer;
+  color: blue;
+}
