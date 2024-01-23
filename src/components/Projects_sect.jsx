@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Project_card from './Project_card';
-import project1 from '../images/tindog.jpg'
+import { projectData } from './projectData'
 
 const Projects_sect = () => {
+	const [project,setProject] = useState(projectData)
 	return (
 		<>
 			<div className="container">
@@ -11,12 +12,11 @@ const Projects_sect = () => {
 				</div>
                 <hr className="w-50 mx-auto mb-5 text-secondary" />
 				<div className="row justify-content-center gap-4">
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
-					<Project_card id={1} projImg={project1} title={"TinDog Website"} description={"A dynamic web application crafted using HTML, CSS, and Bootstrap. It seamlessly combines elegant design with responsive functionality to create an engaging platform for dog lovers to connect and explore canine companionship"} />
+					{
+						project.map(p => {
+							return <Project_card id={p.id} projImg={p.projImg} title={p.title} description={p.description} sourceCodeURL={p.sourceCodeURL} demoURL={p.demoURL}  />
+						})
+					}
 				</div>
 			</div>
 		</>

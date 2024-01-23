@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Project_card = ({
 	id,
@@ -8,18 +8,26 @@ const Project_card = ({
 	sourceCodeURL,
 	demoURL,
 }) => {
+	const[isReadMore,setIsReadMore] = useState(true);
+	const toggleReadMore = () => {setIsReadMore(!isReadMore)}
+
+	const shortDesc = description.substr(0,150) + '...';
 	return (
 		<>
 			<div className="card" style={{ width: '25rem' }}>
 				<img src={projImg} className="card-img-top" alt={title} />
 				<div className="card-body">
 					<h5 className="card-title">{title}</h5>
-					<p className="card-text">{description}</p>
+					<p className="card-text">{isReadMore ? shortDesc : description}{
+						description.length > 150 && <span className='read-more' onClick={toggleReadMore}>
+							{isReadMore ? 'Read More' : ' Show Less'}
+						</span>
+					}</p>
 					<div className="d-flex gap-3">
-                    <a href={sourceCodeURL} className="btn btn-primary">
+                    <a href={sourceCodeURL} target='_blank' className="btn btn-primary">
 						Source Code
 					</a>
-					<a href={demoURL} className="btn btn-secondary">
+					<a href={demoURL} target='_blank' className="btn btn-secondary">
 						Demo
 					</a>
                     </div>
@@ -27,6 +35,6 @@ const Project_card = ({
 			</div>
 		</>
 	);
-};
+};	
 
 export default Project_card;
