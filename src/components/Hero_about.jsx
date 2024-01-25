@@ -7,7 +7,7 @@ function Hero_about() {
     <img className="d-block mx-auto mb-4" src={pic} alt="" width="150" height="150" style={{borderRadius: '50%'}} />
     <h1 className="display-5 fw-bold text-body-emphasis">About Me</h1>
     <div className="col-lg-6 mx-auto">
-      <p className="lead mb-4">I'm a Highly motivated aspiring web developer with a passion for creating responsive and visually appealing websites, equipped with a solid foundation in HTML, CSS, and JavaScript, and a strong commitment to continuous learning and innovation.</p>
+      <p className="lead mb-4">I'm a Highly motivated web developer with a passion for creating responsive and visually appealing websites, equipped with a solid foundation in HTML, CSS, and JavaScript, and a strong commitment to continuous learning and innovation.</p>
     </div>
   </div>
   )

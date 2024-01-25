@@ -12,7 +12,7 @@ function Hero() {
       </div>
       <div className="col-lg-6">
         <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">I'm Leonyl Luke</h1>
-        <p className="lead">An aspiring Web Develper.</p>
+        <p className="lead">A Web Developer.</p>
         <div className="d-grid gap-2 d-flex justify-content-md-start">
           <a href='https://www.linkedin.com/in/leonyl-luke-jayme-bb1188285/' type="button" className="btn btn-primary btn-lg px-4 me-md-2" target='_blank'><FaLinkedin /></a>
           <a href='https://github.com/leonyllukejayme' type="button" className="btn btn-outline-secondary btn-lg px-4" target='_blank'><FaGithub /></a>
