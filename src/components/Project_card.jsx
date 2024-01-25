@@ -4,6 +4,7 @@ const Project_card = ({
 	id,
 	projImg,
 	title,
+	pLang,
 	description,
 	sourceCodeURL,
 	demoURL,
@@ -18,6 +19,9 @@ const Project_card = ({
 				<img src={projImg} className="card-img-top" alt={title} />
 				<div className="card-body">
 					<h5 className="card-title">{title}</h5>
+					<div className="d-flex gap-2">
+					{pLang.map(p => <p class="skl-btn">{p}</p>)}
+					</div>
 					<p className="card-text">{isReadMore ? shortDesc : description}{
 						description.length > 150 && <span className='read-more' onClick={toggleReadMore}>
 							{isReadMore ? 'Read More' : ' Show Less'}

@@ -14,7 +14,8 @@ const Projects_sect = () => {
 				<div className="row justify-content-center gap-4">
 					{
 						project.map(p => {
-							return <Project_card id={p.id} projImg={p.projImg} title={p.title} description={p.description} sourceCodeURL={p.sourceCodeURL} demoURL={p.demoURL}  />
+							return <Project_card id={p.id} projImg={p.projImg}
+							pLang={p.pLang} title={p.title} description={p.description} sourceCodeURL={p.sourceCodeURL} demoURL={p.demoURL}  />
 						})
 					}
 				</div>

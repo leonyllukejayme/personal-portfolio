@@ -1,47 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-body{
-  /* min-height: 75rem; */
-  padding-top: 5.5rem;
-  font-family: 'Outfit', sans-serif;
+body {
+	/* min-height: 75rem; */
+	padding-top: 5.5rem;
+	font-family: 'Outfit', sans-serif;
 }
-.navbar{
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.5s;
-}
-
-.header-bg{
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: 0.5s;
+.navbar {
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: 0.5s;
 }
 
-
-.header-bg a{
-  color: white;
-  transition: 0.5s;
+.header-bg {
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: 0.5s;
 }
 
-.header-bg .navbar-toggler{
-  border-color: white;
-}
-.header-bg .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.header-bg a {
+	color: white;
+	transition: 0.5s;
 }
 
-.navbar a:hover{
-  color: #b9b9b9;
+.header-bg .navbar-toggler {
+	border-color: white;
+}
+.header-bg .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.btn{
-  border-radius: 2rem;
+.navbar a:hover {
+	color: #b9b9b9;
 }
 
-.card{
-  border: none;
+.btn {
+	border-radius: 2rem;
 }
 
+.card {
+	border: none;
+}
 
-.read-more{
-  cursor: pointer;
-  color: blue;
+.read-more {
+	cursor: pointer;
+	color: blue;
+}
+
+.skl-btn {
+	display: inline-block;
+	outline: 1px solid #b9b9b9;
+	/* cursor: pointer; */
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 20px;
+	height: 30px;
+	max-height: 25px;
+	background: none;
+	font-weight: 700;
+	border: 0;
+	border-radius: 50px;
+	color: #27d9d0;
+	transition-timing-function: ease-in-out;
+	transition-property: background;
+	transition-duration: 150ms;
+	box-shadow: none;
+}
+.skl-btn:hover {
+	background: #f7f9fd;
 }
