@@ -1,5 +1,5 @@
 import project1 from '../images/tindog.jpg'
-import project2 from '../images/keeper_app1.JPG'
+import project2 from '../images/keeper_app1.jpg'
 import project3 from '../images/todo.jpg'
 
 
