@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
     const year = new Date();
@@ -11,8 +12,8 @@ function Footer() {
     </div>
 
     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex ">
-      <li className='ms-3'><a className='text-body-secondary' href="https://www.linkedin.com/in/leonyl-luke-jayme-bb1188285/"target='_blank'><i className="fa-brands fa-linkedin fa-2xl"></i></a></li>
-      <li className='ms-3'><a className='text-body-secondary' href="https://github.com/leonyllukejayme"target='_blank'><i className="fa-brands fa-github fa-2xl"></i></a></li>
+      <li className='ms-3'><a className='text-body-secondary' href="https://www.linkedin.com/in/leonyl-luke-jayme-bb1188285/"target='_blank'><FaLinkedin style={{fontSize:"2rem"}}/></a></li>
+      <li className='ms-3'><a className='text-body-secondary' href="https://github.com/leonyllukejayme"target='_blank'><FaGithub style={{fontSize:"2rem"}}/></a></li>
     </ul>
   </footer>
 </div>
