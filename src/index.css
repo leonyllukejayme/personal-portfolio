@@ -5,6 +5,16 @@ body {
 	padding-top: 5.5rem;
 	font-family: 'Outfit', sans-serif;
 }
+/* For wider screen */
+.container-fluid{
+	max-width: 64rem;
+}
+
+.navbar-expand-lg{
+	justify-content: center;
+}
+
+/* ------------------ */
 .navbar {
 	background-color: rgba(0, 0, 0, 0.1);
 	transition: 0.5s;
