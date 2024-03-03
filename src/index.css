@@ -6,11 +6,11 @@ body {
 	font-family: 'Outfit', sans-serif;
 }
 /* For wider screen */
-.container-fluid{
+.container-fluid {
 	max-width: 64rem;
 }
 
-.navbar-expand-lg{
+.navbar-expand-lg {
 	justify-content: center;
 }
 
@@ -60,6 +60,7 @@ body {
 	/* cursor: pointer; */
 	font-size: 14px;
 	padding: 0 12px;
+	margin-bottom: 5px;
 	line-height: 20px;
 	height: 30px;
 	max-height: 25px;
