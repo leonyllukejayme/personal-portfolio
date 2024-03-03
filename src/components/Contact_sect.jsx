@@ -5,9 +5,9 @@ const Contact_sect = () => {
 		<div className="my-2 ">
 			<div className="p-5 text-center bg-body-tertiary">
 				<div className="container py-5">
-					<h1 className="text-body-emphasis fw-bold">Get In Touch</h1>
+					<h1 className="text-body-emphasis fw-bold">Hire a Talented Full-Stack Developer</h1>
 					<p className="col-lg-8 mx-auto lead">
-						I would love to talk about programming with you.🙂🙂
+					Available for Freelance and On-Site Opportunities: Seeking Junior/Entry-Level Roles in Web Development.🙂🙂
 					</p>
 					<a href='mailto:leonyljayme@gmail.com' target='_blank' class="btn btn-primary px-5 mb-5" >
 						Email Me
